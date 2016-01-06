@@ -8,9 +8,9 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.html$/, loader: 'raw' },
-      { test: /\.css$/, loader: 'css!style' },
-      //TODO: create loader for .js file transpile ES6 to ES5
-      { test: /\.js$/, loader: 'babel?stage=1', exclude: /node_moodules/ }
+      { test: /\.styl$/, loader: 'style!css!stylus' },
+      // { test: /\.css$/, loader: 'css!style', exclude: /node_modules/ },
+      { test: /\.js$/, loader: 'babel?stage=1', exclude: /node_modules/ }
     ]
   },
 

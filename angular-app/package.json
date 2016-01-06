@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start" : "gulp"
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
     "angular-ui-router": "^0.2.15",
     "jeet": "^6.1.2",
     "lodash": "^3.10.1",
+    "normalize.css": "^3.0.3",
     "rupture": "^0.6.1"
   },
   "devDependencies": {
@@ -31,7 +32,6 @@
     "css-loader": "^0.15.4",
     "file-loader": "^0.8.4",
     "gulp": "^3.9.0",
-    "gulp-todoist": "0.0.2",
     "node-libs-browser": "^0.5.2",
     "raw-loader": "^0.5.1",
     "run-sequence": "^1.1.1",
