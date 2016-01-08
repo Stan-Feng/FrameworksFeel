@@ -1,5 +1,4 @@
 import angular from 'angular';
-
 import {homeDirective} from './home.directive';
 
 export const home = angular.module('home', [])

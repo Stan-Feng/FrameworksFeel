@@ -1,4 +1,3 @@
-// import 'normalize.css';
 import './app.styl';
 import {appDirectice} from './app.directive';
 
@@ -8,10 +7,12 @@ import uiRouter from 'angular-ui-router';
 
 
 import {home} from './components/home/home.js';
+import {blog} from './components/blog/blog.js';
 
 angular.module('app', [
    uiRouter,
    ngAnimate,
-   home.name
+   home.name,
+   blog.name
 ])
 .directive('app', appDirectice);
