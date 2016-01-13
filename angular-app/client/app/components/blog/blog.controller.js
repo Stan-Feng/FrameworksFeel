@@ -1,12 +1,23 @@
+import _ from 'lodash';
+
 class BlogController {
-  constructor () {
+  constructor (Posts) {
     this.message = 'This is blog message.';
-    this.posts = [
-      {title: 'First Blog', author: 'Stan Feng'},
-      {title: 'Second Blog', author: 'Stan Feng'},
-      {title: 'Third Blog', author: 'Stan Feng'}
-    ];
+
+    this.Posts = Posts;
+    this.getPosts();
+
+    this.search = '';
+  }
+
+  getPosts () {
+    this.Posts.get()
+      .then(() => {
+        this.posts = this.Posts.getState();
+      });
   }
 }
+
+BlogController.$inject = ['Posts'];
 
 export {BlogController};

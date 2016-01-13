@@ -23,7 +23,6 @@
     "angular-ui-router": "^0.2.15",
     "jeet": "^6.1.2",
     "lodash": "^3.10.1",
-    "normalize.css": "^3.0.3",
     "rupture": "^0.6.1"
   },
   "devDependencies": {

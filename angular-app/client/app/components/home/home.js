@@ -11,4 +11,3 @@ export const home = angular.module('home', [])
   });
 })
 .directive('home', homeDirective);
-
