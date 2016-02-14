@@ -1,3 +1,15 @@
 {{link-to 'Back to list of orgs' 'orgs'}}
-<h4>Facebook</h4>
+<h4>{{content.name}}</h4>
+
+<img src={{content.avatar_url}} height="250" />
+<br>
+
+<span {{action 'addToRecords' 'TWO'}}>Click Meee!</span>
+
+<ul>
+  {{#each records as |record|}}
+    <li>{{record.id}}</li>
+  {{/each}}
+</ul>
+
 {{outlet}}

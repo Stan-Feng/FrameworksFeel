@@ -3,27 +3,38 @@
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
-## Prerequisites
+## Routes
 
-You will need the following things properly installed on your computer.
+* Routes is a finite state machine.
+* Routes manages transitions
+  * Load templates and models
+  * Handle user events
 
-* [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://www.ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+## Services
 
-## Installation
+* Singletons
+* Very long life cycle
+* Means of managing shared app functionality/state
+* Live in the app/services
+* Ember.inject.service()
 
-* `git clone <repository-url>` this repository
-* change into the new directory
-* `npm install`
-* `bower install`
+## Actions
 
-## Running / Development
-
-* `ember server`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+* The primary means of handling user interaction
+* action-binding is similar to data-binding
+* Can be handled by Routes, Components, Views and Controllers
+```HTML
+<span{{action 'thingsWasClicked'}}> Click Here! </span>
+```
+```js
+Ember.Route.extend({
+  actions: {
+    thingsWasClicked () {
+      console.log('Clicked!');
+    }
+  }
+});
+```
 
 ### Code Generators
 
