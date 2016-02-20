@@ -35,10 +35,17 @@ Ember.Route.extend({
   }
 });
 ```
+18 lou 3hao
+10dong
 
-### Code Generators
+### Test
 
-Make use of the many generators for code, try `ember help generate` for more details
+* Unit - for testing algorithmic complexity
+  * utils, models, services
+* Integration - for testing contracts between pieces of code, and how things work together
+  * components
+* Acceptance (functional) - testing user workflows in the context of your entire application
+  * routes, ember-data stuff
 
 ### Running Tests
 
