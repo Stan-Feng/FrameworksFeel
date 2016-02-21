@@ -47,10 +47,11 @@ Ember.Route.extend({
 * Acceptance (functional) - testing user workflows in the context of your entire application
   * routes, ember-data stuff
 
-### Running Tests
+### Ember-Data
 
-* `ember test`
-* `ember test --server`
+* A persistence library
+* Key objects: Store, Model, Adapter, Serializer
+* Define how to interact with your APIs no longer need to explicitly interact with them explicitly
 
 ### Building
 
