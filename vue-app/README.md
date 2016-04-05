@@ -1,6 +1,6 @@
 # vue-app
-
-> Blog
+> Blog Routes:
+* /index
 
 ## Build Setup
 
