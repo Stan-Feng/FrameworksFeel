@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h2>Post of {{title}}</h2>
-    <router-view></router-view>
+    <h2 class='title'>Post of {{title}}</h2>
+    <router-view class='main-content'></router-view>
   </div>
 </template>
 
@@ -22,3 +22,13 @@
     }
   }
 </script>
+
+<style lang='sass' scoped>
+.title
+  text-align: center
+
+.main-content
+  color: black
+  font-size: 13px
+  font-family: Monaco
+</style>

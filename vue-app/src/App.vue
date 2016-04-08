@@ -1,13 +1,13 @@
 <template>
-    <div>
-      <img class="logo" src="./assets/logo.png">
-    </div>
-    <ul class="head-bar">
+  <div class="head-bar">
+    <img class="logo" src="./assets/logo.png">
+    <ul>
       <li><a v-link="{ path: '/about' }">About</a></li>
       <li><a v-link="{ path: '/blogs' }">Blogs</a></li>
       <li><a v-link="{ path: '/blog/VueJs-Intro/post' }">Intro to VueJs</a></li>
       <li><a v-link="{ path: '/blog/categories/FrontEnd' }">Front-end Category</a></li>
     </ul>
+  </div>
      <router-view class="view" transition="test" transition-mode="out-in" keep-alive></router-view>
 </template>
 
@@ -23,18 +23,18 @@
   };
 </script>
 
-<style lang="sass" scoped>
+<style lang="sass">
 html
   height: 100%
 
 a
   text-decoration: none
 a:link
-  color: black
+  color: #7bc6f9
 a:visited
-  color: black
+  color: #7bc6f9
 a:hover
-  color: red
+  color: #f9c37b
 
 body
   /*display: flex;*/
@@ -48,10 +48,14 @@ body
 
 .head-bar
   list-style: none
-
-.head-bar li
-  display: inline-block
-
+  ul
+    display: inline
+    float: right
+    margin-right: 12px
+  li
+    display: inline-block
+    margin-left: 12px
+    font-weight: bold
 
 .logo
   width: 50px
