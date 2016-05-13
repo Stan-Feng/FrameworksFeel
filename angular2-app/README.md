@@ -1,6 +1,8 @@
 # Building an Angular 2 Website Using Routes
 This is a simple Angular 2 website using the brand new router. It demonstrates how to build components, configure routes, inject services, and use the `@Input` decorator to bind properties to components.
 
+Original URL: https://github.com/onehungrymind/fem-ng2-simple-app
+
 ## Dependencies
 - You must have `node v >= 4.0` and `npm` installed (via `brew install node` or [NodeJS.org](https://nodejs.org/en/));
 - `npm i -g typings webpack-dev-server webpack rimraf`
