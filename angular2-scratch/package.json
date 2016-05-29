@@ -1,0 +1,17 @@
+{
+  "name": "angular2-scratch",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "awesome-typescript-loader": "^0.17.0",
+    "typescript": "^1.8.10",
+    "typings": "^1.0.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}
