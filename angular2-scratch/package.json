@@ -6,6 +6,8 @@
   "dependencies": {},
   "devDependencies": {
     "awesome-typescript-loader": "^0.17.0",
+    "ng2lint": "0.0.10",
+    "tslint": "^3.10.2",
     "typescript": "^1.8.10",
     "typings": "^1.0.4"
   },

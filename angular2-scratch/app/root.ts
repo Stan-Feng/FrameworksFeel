@@ -1,12 +1,10 @@
 interface Application {
-  name: String;
+  name: string;
 }
 
 class App implements Application {
-  name: string;
-
-  constructor (n: string) {
-    this.name = n;
+  constructor (public name: string) {
+    
   }
 }
 
