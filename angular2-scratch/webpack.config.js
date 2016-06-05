@@ -29,7 +29,7 @@ module.exports = {
     loaders: [
       { test: /\.js$/, loader: 'babel-loader?presets[]=es2015', exclude: /node_modules/ },
       { test: /\.ts$/, loader: 'awesome-typescript-loader', exclude: [/\.(spec|e2e).ts/] },
-      { test: /\(.html|.css)$/, loader: 'raw-loader' }
+      { test: /\.(html|css)$/, loader: 'raw-loader' }
     ]
   },
 
