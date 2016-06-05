@@ -45,4 +45,23 @@
   * Constantly consider change detection implications as you develop an app
 
 ## Component Fundamentals
-*
+* Class
+  * Class is not Inheritance
+  * Create the component as an ES6 class
+  * Properties and methods on our component class will be available for binding out template
+* Import
+  * Import core Angular dependencies
+  * Import 3rd party dependencies
+  * Import your custom dependencies
+  * This approach gives us a more fine-grained control over the managing our dependencies
+* Decorate
+  * Turn our class into something Angular2 can use by decorating it with a Angular specific metadata
+  * Use the @<decorator> syntax to decorate your classes
+  * The most common class decorators are @Component, @Injecteable, @Directive and @Pipe
+  * You can also decorate properties and methods within your class
+  * The two most common member decorators are @Input and @Output
+* Enhance
+  * This is an iterative process that will vary on a per-case basis but the idea is to start small and build your component out
+  * Enhance with composition by adding methods, inputs and outputs, injecting services, etc.
+  * Remember to keep your components small and focused
+* Lifecycle Hooks

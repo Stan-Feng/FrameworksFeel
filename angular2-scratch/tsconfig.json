@@ -5,7 +5,8 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "sourceMap": true,
-    "suppressImplicitAnyIndexErrors":true
+    "suppressImplicitAnyIndexErrors":true,
+    "moduleResolution": "node"
   },
   "compileOnSave": false,
   "buildOnSave": false,
@@ -13,8 +14,8 @@
     "node_modules"
   ],
   "filesGlob": [
-    "app/**/*.ts",
-    "typings/browser.d.ts"
+    "client/**/*.ts",
+    "typings/index.d.ts"
   ],
   "atom": {
     "rewriteTsconfig": false
