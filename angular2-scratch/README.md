@@ -65,3 +65,19 @@
   * Enhance with composition by adding methods, inputs and outputs, injecting services, etc.
   * Remember to keep your components small and focused
 * Lifecycle Hooks
+  * Allow us to perform custom logic at various stage of component's Lifecycle
+  * Data isn't always immediately available in the constructor
+  * Only available in TypeScript
+  * The lifecycle interfaces are optional.
+  * Implemented as class methods on the component class
+
+## Templates
+  * Interpolation
+    * Allow us to bind to component properties/methods in out template
+  * Property Binding
+    * Flows data from the component to an element
+  * Event Binding
+    * Flows data from an element to the component
+  * Hashing Operator
+    * Creates local variable in template
+  * Elvis Operator
